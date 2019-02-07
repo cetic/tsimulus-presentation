@@ -12,6 +12,9 @@ Open index.html in your browser or deploy this on OpenShift e.g. (see `.gitlab.y
 
 See OpenShift usage documentation for deployment instructions: https://git.cetic.be/OpenShift/documentation/tree/master/webconsole/#tldr
 
+Result is here: http://presentation-template.openshift.ext.cetic.be
+
+
 ### References
 
 * https://github.com/hakimel/reveal.js/
