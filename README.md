@@ -5,7 +5,7 @@ This repository contains a template for reveal.js presentation slide.
 1. Fork this repository
 2. Setup CI/CD (project name in `.gitlab-ci` file, Openshift config)
 3. Edit `index.html`
-4. Edit Authors in README.md
+4. Edit main title, Authors in README.md
 
 ### Usage
 
