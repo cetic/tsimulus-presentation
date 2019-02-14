@@ -2,9 +2,14 @@
 
 This repository contains a template for reveal.js presentation slide.
 
+1. Fork this repository
+2. Setup CI/CD (project name in `.gitlab-ci` file, Openshift config)
+3. Edit `index.html`
+4. Edit Authors in README.md
+
 ### Usage
 
-Fork this repository and open index.html in your browser or deploy this on OpenShift e.g. (see `.gitlab.yml`)
+Open index.html in your browser or deploy this on OpenShift e.g. (see `.gitlab.yml`)
 
 * presentation mode: press `s`
 * overview mode: press `escape`
@@ -13,7 +18,6 @@ Fork this repository and open index.html in your browser or deploy this on OpenS
 See OpenShift usage documentation for deployment instructions: https://git.cetic.be/OpenShift/documentation/tree/master/webconsole/#tldr
 
 Result is here: http://presentation-template.openshift.ext.cetic.be
-
 
 ### References
 
