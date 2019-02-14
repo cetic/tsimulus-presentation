@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 	var port = grunt.option('port') || 8080;
 	var root = grunt.option('root') || '.';
 	var hostname = grunt.option('hostname') || '0.0.0.0';
-	
+
 	if (!Array.isArray(root)) root = [root];
 
 	// Project configuration
@@ -192,4 +192,3 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'test', [ 'jshint', 'qunit' ] );
 
 };
-

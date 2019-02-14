@@ -4,7 +4,7 @@ This repository contains a template for reveal.js presentation slide.
 
 ### Usage
 
-Open index.html in your browser or deploy this on OpenShift e.g. (see `.gitlab.yml`)
+Fork this repository and open index.html in your browser or deploy this on OpenShift e.g. (see `.gitlab.yml`)
 
 * presentation mode: press `s`
 * overview mode: press `escape`
