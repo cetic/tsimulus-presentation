@@ -7,25 +7,6 @@ This repository contains a template for reveal.js presentation slide.
 3. Edit `index.html`
 4. Edit main title, Authors in README.md
 
-To Redirect HTTP Traffic to HTTPS, edit your route via `oc edit route` and add `insecureEdgeTerminationPolicy: Redirect`.
-
-```
-apiVersion: v1
-kind: Route
-metadata:
-  name: route-edge-secured-redirect-insecure 
-spec:
-  host: www.example.com
-  to:
-    kind: Service
-    name: service-name 
-  tls:
-    termination:                   edge      
-    insecureEdgeTerminationPolicy: Redirect  
-    [ ... ]
-```
-
-
 ### Usage
 
 Open index.html in your browser or deploy this on OpenShift e.g. (see `.gitlab.yml`)
