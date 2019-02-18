@@ -17,7 +17,7 @@ variables:
   script:
     - "oc get services $APP 2> /dev/null || oc new-app openshift/nodejs:6~. --name=$APP"
     - "oc start-build $APP --from-dir=. --follow || sleep 3s"
-    - "oc get routes $APP 2> /dev/null || oc expose service $APP --hostname=$APP_HOST"
+    - "oc get routes $APP 2> /dev/null || oc create route edge $APP --hostname=$APP_HOST --service=$APP"
 
 prod:
   <<: *deploy
