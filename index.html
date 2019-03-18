@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>CETIC - Presentation template</title>
+		<title>CETIC - Benchmark Tools</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/cetic.css">
@@ -28,32 +28,205 @@
 		<div class="reveal">
 			<div class="slides">
 				<section class="homepage" data-background-image="img/background-homepage.png" data-background-size="contain">
-					<h1>Titre de la présentation</h1>
-					<h2>Orateur(s)</h2>
-					<h3>Evènement, lieu, date</h3>
+					<h1>TSimulus Presentation</h1>
+					<h2>Alexandre Nuttinck</h2>
+					<h3>CETIC Avenue Jean Mermoz 28, 6041 Charleroi</h3>
+					<h3>23-03-2019</h3>
 				</section>
 				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
 					<script type="text/template">
-						## I'm a template slide, copy me!
-						* I'm made in markdown, but you can also do plain html
-						* see other stuff you can do with reveal.js [here](https://github.com/hakimel/reveal.js)
-						* quick start: fork this repository (https://github.com/cetic/reveal.js) and modify index.html
+						# Summary
+						
+						Slides are available here: https://tsimulus.presentations.cetic.be
 					</script>
+				</section>
+				<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<h2>Benchmark Tools Categories</h2>
+
+						<table>
+							<tr>
+								<td align="center">	
+									<h4>TSimulus ~ Sensors Simulator</h4>
+									<p>Tool made at <a href="https://www.cetic.be">CETIC</a>.</p>
+									<p>With TSimulus, we can: </p>
+						 <ul>
+						  <li> simulate sensors. </li>
+						  <li> generate a sufficient amount of data to test the Big Data platform. </li>
+						</ul>
+								</td>
+								<td align="center">	
+									<p> <b>input for</b> </p>
+									<img class="plain" data-src="img/arrow.png">
+								</td>
+								<td align="center">
+									<h4>Performance / Load Testing </h4>
+									
+									<p>Determines a system's performance under real-life load conditions. </p>
+										
+									<p>Helps determine how the application behaves when there are usage spikes.</p>
+								</td>
+								<td align="center">	
+									<p> <b>input for</b> </p>
+									<img class="plain" data-src="img/arrow.png">
+								</td>
+								<td align="center">
+									<h4> Monitoring </h4>
+									<p>Services and infrastructure monitoring tools provide information on the state of the system.</p>
+									<p>Should be coupled with the Load testing tests and/or with TSimulus.</p>
+								</td>
+							</tr>
+						</table>
+						
+						<aside class="notes">
+
+						(memory usage, CPU, error logs, disk space, network connectivity, ...)
+						, to be able to monitor the different components during these tests
+						Big data projects involve processing of large amounts of data in a short period of time. This operation requires heavy computing resources and smooth data flow in the network. Architectural issues in the system can lead to performance bottlenecks in the process, which can impact the availability of the application. This can have impact on the success of the project. Performance testing of the system is required to avoid the above issues. Here we measure metrics like throughput, memory utilization, CPU utilization, time taken to complete a task etc. It is also recommended to run failover tests to validate the fault tolerance of the system and ensure that if some nodes fail, other nodes will take up the processing.
+						</aside>
+
+					
+				</section>
+				<section>
+					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<h2> TSimulus </h2>
+
+						An opensource realistic time series generator made at <a href="https://www.cetic.be">CETIC</a>.
+
+						<table class="imageset">
+							<tr>
+								<td align="center">
+									<img class="plain" data-src="img/mg.jpg" />
+									<p> <b> Mathieu Goemine </b> </p>
+									<p> TSimulus Creator </p>
+									<p> <a href="https://www.cetic.be/Mathieu-Goeminne?lang=en"> Expert Research Engineer in Big Data </a> </p> 
+									<p> <a href="mailto:mathieu.goeminne@cetic.be"> mathieu.goeminne@cetic.be </a> </p>
+									<p> <a href="https://www.linkedin.com/in/mathieu-goeminne-724ab99/"> Linkedin </a> </p>
+								</td>
+								<td align="center">
+									<img class="plain" data-src="img/an.jpg">
+									<p> <b> Alexandre Nuttinck </b> </p>
+									<p> TSimulus Contributor </p>
+									<p> <a href="https://www.cetic.be/Alexandre-Nuttinck?lang=en"> Research Engineer in Cloud Computing </a> </p>
+									<p> <a href="mailto:alexandre.nuttinck@cetic.be"> alexandre.nuttinck@cetic.be </a> </p>
+									<p> <a href="https://www.linkedin.com/in/alexandre-nuttinck/"> Linkedin </a> </p>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<h2> TSimulus </h2>
+						<h4> Origins </h4>
+						
+						 <ul>
+						  <li> EAM-SDI: research project with <a href="https://www.guardis.com/index.html"> Guardis</a>. </li>
+						  <li> Specific area of ​​automatic infrastructure management. </li>
+						  <li> Collect data of cpus, fans, ... </li>
+						  <li> Monitoring, take reactions against events. </li>
+						  <li> Problem: lack of real data and in real time. </li>
+						  <li> <b> The solution was to simulate a large number of sensors gathering information from a collection and analysis system. </b> </li>
+						</ul>
+					</section>
+					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<h2> TSimulus </h2>
+						<h4> What is TSimulus?</h4>
+
+						<p> TSimulus (formally, RTS-Gen) is a tool for generating random, yet realistic, time series values. </p> 						
+
+						<h5> Time series? </h5>
+
+						<ul>
+						  <li> An ordered sequence of points in time, each of them is associated with at most one value. </li>
+						  <li> Timestamp → value (typically, real).</li>
+						  <li> example: 2018-03-12T14:00:00.000 - 20°C</li>
+						  <li> Used in a wide variety of fields. </li>
+						</ul>
+
+						<p> <h5> Random but realistic? </h5> </p>
+
+						<ul>
+						  <li> Convincing noise. </li>
+						  <li> Models, patterns. </li>
+						</ul>
+					</section>
+					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<h2> TSimulus </h2>
+						<h4> How TSimulus works?</h4>
+
+						<table class="imageset">
+							<tr>
+								<td align="center">
+									<p>In input</p>
+									<img class="plain" data-src="img/tsimulusconfig.png" width="800"/>
+									<p>A DSL that describes "the look" of the timeseries</p>
+									<p>Cycles (daily, weekly)</p>
+									<p>Noise (white, ARMA)</p>
+									<p>combinations</p>
+									<p>conditions</p>
+								</td>
+								<td align="center">
+									<p>Output</p>
+									<img class="plain" data-src="img/tsimulusgraph.png" width="800"/>
+									<p> triplets (series, timestamp, value)</p>
+								</td>
+							</tr>
+						</table>
+
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						## TSimulus
+						#### Documentation
+
+						* Maintained on readthedocs: http://tsimulus.readthedocs.io
+						* The library
+							* Scala (jar downloadable from Maven Central)
+							* Development on Github (https://github.com/cetic/TSimulus)
+						* The CLI: https://github.com/cetic/tsimulus-cli
+							* Reads configuration documents from a regular JSON file and produces a CSV file containing the time series.
+						
+						* The microservice: https://github.com/cetic/tsimulus-ms
+							* API akka, sending a configuration file in POST request
+							* Possible to generate a value on POST request or a set of values
+							* CSV in response
+							* Docker image available: https://hub.docker.com/r/ceticasbl/tsimulus-ms/
+					</section>
 				</section>
 				<section>
 					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
-						Advanced usage - using an external js library: https://plot.ly/javascript
+						## TSAAS ~ TSimulus as a Service
+
+						https://git.cetic.be/TSimulus/tsimulus-saas 
+
+						Work that is in progress at CETIC: TSimulus As A Service (TSAAS) where the project aims at
+						* building a REST API in front of the TSimulus framework.
+						* set of configurable websocket routes to consume the TSimulus stream.
+
+						Demo environment at: https://tsaas.cetic.be/
 					</section>
 					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
-						<h2>Advanced usage - Plot.ly test 1</h2>
-						<div id="plotly_test1" style="width:600px;height:500px;"></div>
+						<h2> TSAAS ~ TSimulus as a Service </h2>
+						<h4> TSimulus as Sensors simulator </h4>
+
+						<img class="plain" data-src="img/iteration1.png" width="1500"/>
 					</section>
 					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
-						<h2>Advanced usage - Plot.ly test 2</h2>
-						<div id="plotly_test2" style="width:1000px;height:500px;"></div>
+						<h2> TSAAS ~ TSimulus as a Service </h2>
+						<h4> TSimulus as Sensors simulator </h4>
+
+						 <video width="1300">
+						    <source data-src="video/tsimulus.mp4" type="video/mp4" />
+						 </video>
 					</section>
 				</section>
+				<section  data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+					<script type="text/template">
+						## Proposed Solution
 
+						* Use TSimulus as a load testing tool to simulate sensors,
+						* generate data and
+						* send it to the Big Data Platform,
+						* coupled with monitoring tools (eg, Istio / Zabbix / ELK).
+					</script>
+				</section>
 				<!-- This is the last page section -->
 				<section class="lastpage" data-background-image="img/background-lastpage.png">
 					<table>
@@ -113,36 +286,22 @@
 								</table>
 							</td>
 							<td style="text-align: center">
-								<h1>Title of the presentation</h1>
+								<h1>TSimulus</h1>
 								<br />
 								<br />
 								<br />
 								<table style="width: 100%">
 									<tr>
-										<td style="text-align: center"><h2>Presenter</h2></td>
+										<td style="text-align: center"><h2>Alexandre Nuttinck</h2></td>
 									</tr>
 									<tr>
-										<td style="text-align: center"><h3>Function</h3></td>
+										<td style="text-align: center"><h3>Research Engineer</h3></td>
 									</tr>
 									<tr>
-										<td style="text-align: center">Phone</td>
+										<td style="text-align: center">+32 495 22 66 10</td>
 									</tr>
 									<tr>
-										<td style="text-align: center">email@cetic.be</td>
-									</tr>
-								</table>
-								<table style="width: 100%">
-									<tr>
-										<td style="text-align: center"><h2>Presenter</h2></td>
-									</tr>
-									<tr>
-										<td style="text-align: center"><h3>Function</h3></td>
-									</tr>
-									<tr>
-										<td style="text-align: center">Phone</td>
-									</tr>
-									<tr>
-										<td style="text-align: center">email@cetic.be</td>
+										<td style="text-align: center">alexandre.nuttinck@cetic.be</td>
 									</tr>
 								</table>
 							</td>
@@ -172,64 +331,6 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
-		</script>
-
-		<script type="text/javascript">
-            TESTER = document.getElementById('plotly_test1');
-            data = [
-                {
-					type: 'scatterpolar',
-					r: [39, 28, 8, 7, 58, 98],
-					theta: ['Integration','Distributed','Multi-tenancy', 'HCI', 'API', 'Workflow tools', 'Licensing and documentation', 'Exploitation'],
-					fill: 'toself',
-					name: 'Apache Beam'
-            	},
-                {
-                    type: 'scatterpolar',
-                    r: [56, 10, 22, 88, 78, 12],
-                    theta: ['Integration','Distributed','Multi-tenancy', 'HCI', 'API', 'Workflow tools', 'Licensing and documentation', 'Exploitation'],
-                    fill: 'toself',
-                    name: 'Streampipes'
-                }
-            ];
-
-            layout = {
-                polar: {
-                    radialaxis: {
-                        visible: true,
-                        range: [0, 100]
-                    }
-                },
-                showlegend: true
-            };
-            Plotly.plot(TESTER, data, layout);
-
-            TESTER2 = document.getElementById('plotly_test2');
-            data2 = [
-                {
-                    type: 'bar',
-                    y: [39, 28, 8, 7, 58, 98],
-                    x: ['Integration','Distributed','Multi-tenancy', 'HCI', 'API', 'Workflow tools', 'Licensing and documentation', 'Exploitation'],
-                    fill: 'toself',
-                    name: 'Apache Beam'
-                },
-                {
-                    type: 'bar',
-                    y: [56, 10, 22, 88, 78, 12],
-                    x: ['Integration','Distributed','Multi-tenancy', 'HCI', 'API', 'Workflow tools', 'Licensing and documentation', 'Exploitation'],
-                    fill: 'toself',
-                    name: 'Streampipes'
-                }
-            ];
-
-            layout2 = {
-                title : "Data processing comparison",
-                barmode: 'group',
-                bargap: 0.15,
-                bargroupgap: 0.1
-            };
-            Plotly.plot(TESTER2, data2, layout2);
-
 		</script>
 			</div>
 		</div>
