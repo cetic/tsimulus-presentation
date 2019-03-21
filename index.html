@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>CETIC - Benchmark Tools</title>
+		<title> CETIC - TSimulus</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/cetic.css">
-
+	
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -29,61 +29,24 @@
 			<div class="slides">
 				<section class="homepage" data-background-image="img/background-homepage.png" data-background-size="contain">
 					<h1>TSimulus Presentation</h1>
+					<p> An opensource realistic time series generator </p>
 					<h2>Alexandre Nuttinck</h2>
 					<h3>CETIC Avenue Jean Mermoz 28, 6041 Charleroi</h3>
 					<h3>23-03-2019</h3>
 				</section>
 				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
 					<script type="text/template">
-						# Summary
+						# https://tsimulus.presentations.cetic.be
 						
-						Slides are available here: https://tsimulus.presentations.cetic.be
+						Slides are available online at this link!
 					</script>
 				</section>
 				<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
-						<h2>Benchmark Tools Categories</h2>
+						<h1> Summary </h1>
 
-						<table>
-							<tr>
-								<td align="center">	
-									<h4>TSimulus ~ Sensors Simulator</h4>
-									<p>Tool made at <a href="https://www.cetic.be">CETIC</a>.</p>
-									<p>With TSimulus, we can: </p>
-						 <ul>
-						  <li> simulate sensors. </li>
-						  <li> generate a sufficient amount of data to test the Big Data platform. </li>
-						</ul>
-								</td>
-								<td align="center">	
-									<p> <b>input for</b> </p>
-									<img class="plain" data-src="img/arrow.png">
-								</td>
-								<td align="center">
-									<h4>Performance / Load Testing </h4>
-									
-									<p>Determines a system's performance under real-life load conditions. </p>
-										
-									<p>Helps determine how the application behaves when there are usage spikes.</p>
-								</td>
-								<td align="center">	
-									<p> <b>input for</b> </p>
-									<img class="plain" data-src="img/arrow.png">
-								</td>
-								<td align="center">
-									<h4> Monitoring </h4>
-									<p>Services and infrastructure monitoring tools provide information on the state of the system.</p>
-									<p>Should be coupled with the Load testing tests and/or with TSimulus.</p>
-								</td>
-							</tr>
-						</table>
-						
-						<aside class="notes">
-
-						(memory usage, CPU, error logs, disk space, network connectivity, ...)
-						, to be able to monitor the different components during these tests
-						Big data projects involve processing of large amounts of data in a short period of time. This operation requires heavy computing resources and smooth data flow in the network. Architectural issues in the system can lead to performance bottlenecks in the process, which can impact the availability of the application. This can have impact on the success of the project. Performance testing of the system is required to avoid the above issues. Here we measure metrics like throughput, memory utilization, CPU utilization, time taken to complete a task etc. It is also recommended to run failover tests to validate the fault tolerance of the system and ensure that if some nodes fail, other nodes will take up the processing.
-						</aside>
-
+						<h3 style="color:#6fb052;"> TSimulus </h3>
+						<h3 style="color:#6fb052;"> TSAAS </h3>
+						<h3 style="color:#6fb052;"> Demo </h3>
 					
 				</section>
 				<section>
@@ -156,7 +119,7 @@
 							<tr>
 								<td align="center">
 									<p>In input</p>
-									<img class="plain" data-src="img/tsimulusconfig.png" width="800"/>
+									<img class="plain" data-src="img/tsimulusconfig.png" width="1400"/>
 									<p>A DSL that describes "the look" of the timeseries</p>
 									<p>Cycles (daily, weekly)</p>
 									<p>Noise (white, ARMA)</p>
@@ -164,7 +127,7 @@
 									<p>conditions</p>
 								</td>
 								<td align="center">
-									<p>Output</p>
+									<p>In output</p>
 									<img class="plain" data-src="img/tsimulusgraph.png" width="800"/>
 									<p> triplets (series, timestamp, value)</p>
 								</td>
@@ -201,12 +164,22 @@
 						* set of configurable websocket routes to consume the TSimulus stream.
 
 						Demo environment at: https://tsaas.cetic.be/
+
+						* TSAAS emerged from Big Data research projects!		
+
 					</section>
-					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">	
 						<h2> TSAAS ~ TSimulus as a Service </h2>
 						<h4> TSimulus as Sensors simulator </h4>
 
-						<img class="plain" data-src="img/iteration1.png" width="1500"/>
+						<img class="plain" data-src="img/bdf.png" width="1500"/>
+
+						<ul>
+						  <li> TSimulus is now used as a (load) testing tool to simulate sensors, </li>
+						  <li> generate data and </li>
+						  <li> send it to the Big Data Platform, </li>
+						  <li> in order to test the different components of the Platform. </li>
+						</ul>
 					</section>
 					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
 						<h2> TSAAS ~ TSimulus as a Service </h2>
@@ -215,17 +188,84 @@
 						 <video width="1300">
 						    <source data-src="video/tsimulus.mp4" type="video/mp4" />
 						 </video>
+
+						 <p> I'm a video, you can play me ! ;) </p>
 					</section>
 				</section>
-				<section  data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
-					<script type="text/template">
-						## Proposed Solution
+				<section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+							## Demo
 
-						* Use TSimulus as a load testing tool to simulate sensors,
-						* generate data and
-						* send it to the Big Data Platform,
-						* coupled with monitoring tools (eg, Istio / Zabbix / ELK).
-					</script>
+							TSimulus sloves the lack of data by simulating for instance:
+							* The temperature (use case presented in today's demo).
+							* The traffic on the roads.
+							* The number of parking spaces.
+							* The number of pedestrians in circulation in the center.
+							* Transit passes.
+							…
+						</script>
+					</section>
+					<section  data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<h2> Demo - A first generation </h2>
+							
+ 
+								<div class="twocolumn">	
+								<div align="center">						
+								<p>For your first generation of time series, we will specify a generator that propose a basic external temperature simulator for Uccle, Belgium. </p>
+											<ul>
+											  <li> TSimulus Microservice is available here: <a href="http://tsimulus.openshift.cetic.be"> http://tsimulus.openshift.cetic.be</a>.</li>
+											  <li> The configuration file: <a href="https://raw.githubusercontent.com/cetic/tsimulus/master/examples/get_started_1.json"> https://raw.githubusercontent.com/cetic/tsimulus/master/examples/get_started_1.json</a>. </li>
+											  <li> Let's make a POST request on  <a href="http://tsimulus.openshift.cetic.be/generator"> http://tsimulus.openshift.cetic.be/generator</a>. </li>
+											</ul>
+								</div>
+								<div align="center">
+											<img class="plain" data-src="img/tsimulusdata1.png" />
+								</div>	
+												
+					</section>
+					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<h2> Demo - A first generation </h2>
+
+							<img class="plain" data-src="img/tsimulusgraph2.png" width="1400" />
+
+					</section>
+					<section  data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<h2> Demo - Towards a more realistic model </h2>
+								<div class="twocolumn">	
+								<div align="center">						
+								<p>Ok it works! </p>
+											<ul>
+											  <li> The temperature varies constantly, and towards the middle of the month, we obtain the values that we have specified. </li>
+											  <li> But, the values are far too regular. It's not realistic. </li>
+											  <li> The temperatures vary according to the time of day. </li>  
+											  <li> <a href="https://raw.githubusercontent.com/cetic/tsimulus/master/examples/get_started_2.json"> https://raw.githubusercontent.com/cetic/tsimulus/master/examples/get_started_2.json</a>.  </li>
+											</ul>
+								</div>
+								<div align="center">
+											<img class="plain" data-src="img/tsimulusdata2.png" />
+								</div>
+												
+					</section>
+					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<h2> Demo - Towards a more realistic model </h2>
+							<img class="plain" data-src="img/tsimulusgraph3.png" width="1400" />
+					</section>
+					<section  data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<h2> Demo - Towards an even more realistic model </h2>
+								<div align="center">						
+								<p>Not yet totally realistic! </p>
+											<ul>
+											  <li> The temperature varies during the years due to the complex modifications of atmostpheric conditions. </li>
+											  <li> To do this, let's add some noise to our generator. </li>
+											  <li> <a href="https://raw.githubusercontent.com/cetic/tsimulus/master/examples/get_started_3.json"> https://raw.githubusercontent.com/cetic/tsimulus/master/examples/get_started_3.json</a>.  </li>
+											</ul>
+								</div>
+					</section>
+					<section data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<h2> Demo - Towards a more realistic model </h2>
+							<img class="plain" data-src="img/tsimulusgraph.png" width="1400" />
+					</section>
 				</section>
 				<!-- This is the last page section -->
 				<section class="lastpage" data-background-image="img/background-lastpage.png">
@@ -286,7 +326,11 @@
 								</table>
 							</td>
 							<td style="text-align: center">
-								<h1>TSimulus</h1>
+								<h1>Thanks!</h1>
+								<h2>Questions?</h2>
+								<p>Code source: <a style="color:white" href="https://github.com/cetic/TSimulus"> https://github.com/cetic/TSimulus</a></p>
+								<p>Documentation: <a style="color:white" href="http://tsimulus.readthedocs.io"> http://tsimulus.readthedocs.io</a></p>
+								<p>Try it on: <a style="color:white" href="http://tsimulus.openshift.cetic.be/generator"> http://tsimulus.openshift.cetic.be/generator</a></p>
 								<br />
 								<br />
 								<br />
