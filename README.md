@@ -1,29 +1,23 @@
-# Reveal.js template slides
+# TSimulus presentation
 
-This repository contains a template for reveal.js presentation slide.
+## Goal
 
-1. Fork this repository
-2. Setup CI/CD (project name in `.gitlab-ci` file, Openshift config)
-3. Edit `index.html`
-4. Edit main title, Authors in README.md
+Slides presentation of [TSimulus](https://github.com/cetic/TSimulus).
 
-### Usage
+These slides are publicly available at https://tsimulus.presentations.cetic.be
 
-Open index.html in your browser or deploy this on OpenShift e.g. (see `.gitlab.yml`)
+## Reveal.js
 
-* presentation mode: press `s`
-* overview mode: press `escape`
-* pdf/print version: go to http://your_slides_url/?print-pdf#/
+This presentation is based on the CETIC reveal theme https://git.cetic.be/communication/revealjs_template
 
-See OpenShift usage documentation for deployment instructions: https://git.cetic.be/OpenShift/documentation/tree/master/webconsole/#tldr
+It uses the reveal.js framework: https://github.com/hakimel/reveal.js/
 
-Result is here: http://presentation-template.openshift.ext.cetic.be
+## References
 
-### References
+Icons are CC0 and mostly from https://svgsilh.com
 
-* https://github.com/hakimel/reveal.js/
+## Authors
 
-### Authors
-
-* **Alexandre Nuttinck** : alexandre.nuttinck@cetic.be
-* **Sebastien Dupont** : sebastien.dupont@cetic.be
+* **Alexandre Nuttinck** - alexandre.nuttinck@cetic.be
+* **Sebastien Dupont** - sebastien.dupont@cetic.be
+* **Mathieu Goeminne** - mathieu.goeminne@cetic.be
